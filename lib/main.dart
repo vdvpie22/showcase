@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:showcase/service_locator.dart';
 
 void main() {
+  configureDependencies();
   runApp(const MyApp());
 }
 
