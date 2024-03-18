@@ -5,8 +5,9 @@ import 'package:showcase/service_locator.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 
-void main() {
-  configureDependencies();
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureDependencies();
   runApp(const MyApp());
 }
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: HomeScreen(),
       onGenerateRoute: (settings) => AppRouter.onGenerateRoute(settings),
     );
   }

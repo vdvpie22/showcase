@@ -1,4 +1,5 @@
 {
   "appTitle": "Showcase",
-  "settings": "Settings"
+  "settings": "Settings",
+  "commonError": "Error, please try later"
 }
